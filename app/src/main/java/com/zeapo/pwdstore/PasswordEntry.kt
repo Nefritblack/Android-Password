@@ -62,7 +62,7 @@ class PasswordEntry(private val content: String) {
         }
     }
 
-    private fun findUsername(): String? {
+    private fun findUsername(): String {
         val extraLines = extraContent!!.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
         for (line in extraLines) {
             for (field in USERNAME_FIELDS) {

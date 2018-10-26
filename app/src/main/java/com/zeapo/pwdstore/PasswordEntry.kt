@@ -13,7 +13,7 @@ class PasswordEntry(private val content: String) {
     var extraContent: String? = null
         private set
     val password: String
-    val username: String?
+    val username: String
     val totpSecret: String?
     val hotpSecret: String?
     val hotpCounter: Long?

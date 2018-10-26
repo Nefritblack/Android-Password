@@ -24,7 +24,6 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.accessibility.AccessibilityWindowInfo;
 import android.widget.Toast;
 
-import com.zeapo.pwdstore.PasswordEntry;
 import com.zeapo.pwdstore.R;
 import com.zeapo.pwdstore.utils.PasswordRepository;
 

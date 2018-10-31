@@ -71,7 +71,7 @@ class PasswordEntry(private val content: String) {
                 }
             }
         }
-        return null
+        return ""
     }
 
     private fun findTotpSecret(decryptedContent: String): String? {

@@ -481,7 +481,7 @@ class PgpActivity : AppCompatActivity(), OpenPgpServiceConnection.OnBound {
     }
 
     private fun calculateHotp(entry : PasswordEntry) {
-        copyOtpToClipBoard(Otp.calculateCode(entry.hotpSecret, entry.hotpCounter + 1))
+        copyOtpToClipBoard(Otp.calculateCode(entry.hotpSecret, entry.hotpCounter!! + 1))
         crypto_otp_show.text = Otp.calculateCode(entry.hotpSecret, entry.hotpCounter!! + 1)
         crypto_extra_show.text = entry.extraContent
     }
